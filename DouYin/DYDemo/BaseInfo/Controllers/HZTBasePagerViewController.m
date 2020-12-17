@@ -21,13 +21,21 @@
 }
 
 -(void)loadSubView{
-    [self.view addSubview:self.pagerView];
-    [self.pagerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view.mas_top).offset(NavBarHeight);
-        make.right.left.bottom.equalTo(self.view);
-    }];
-    [self.view addSubview:self.navView];
-    self.navView.listContainer = (id<JXCategoryViewListContainer>)self.pagerView.listContainerView;
+    self.listContainer = (id<JXCategoryViewListContainer>)self.pagerView.listContainerView;
+    if (self.isHiddenNav) {
+        [self.view addSubview:self.pagerView];
+        [self.pagerView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.right.left.bottom.equalTo(self.view);
+        }];
+    }else{
+        [self.view addSubview:self.pagerView];
+        [self.pagerView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.view.mas_top).offset(NavBarHeight);
+            make.right.left.bottom.equalTo(self.view);
+        }];
+        [self.view addSubview:self.navView];
+        self.navView.listContainer = self.listContainer;
+    }
 }
 
 #pragma mark --- JXPagerViewDelegate
