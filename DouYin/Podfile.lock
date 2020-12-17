@@ -1,0 +1,48 @@
+PODS:
+  - IQKeyboardManager (6.5.6)
+  - JXCategoryView (1.5.5)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.0.0)
+  - SDWebImage (5.1.1):
+    - SDWebImage/Core (= 5.1.1)
+  - SDWebImage/Core (5.1.1)
+  - TZImagePickerController (3.3.2)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - JXCategoryView
+  - Masonry (~> 1.0.0)
+  - MBProgressHUD
+  - MJRefresh (= 3.0.0)
+  - SDWebImage (~> 5.1.1)
+  - TZImagePickerController
+  - YYKit
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManager
+    - JXCategoryView
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SDWebImage
+    - TZImagePickerController
+    - YYKit
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  JXCategoryView: 0293fcb356f10a5c2e679dac0a1a5f1899ee0c87
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 72e41ae6c0e9331da3e19cf7e9286a2b1b62ff5f
+  SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
+  TZImagePickerController: 36ca728ec681228918aa82e993aaab1962281b72
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 7cc8df92532f3a0ad5b6c671747333d023ec6c33
+
+COCOAPODS: 1.8.4

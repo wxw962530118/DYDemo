@@ -1,0 +1,12 @@
+platform :ios, '9.0'
+target 'DYDemo' do
+pod 'JXCategoryView'
+pod 'MJRefresh', '3.0.0'
+#pod 'FDFullscreenPopGesture',:git => 'https://github.com/forkingdog/FDFullscreenPopGesture.git', :branch => 'master'
+pod 'TZImagePickerController'
+pod 'Masonry', '~> 1.0.0'
+pod 'YYKit'
+pod 'SDWebImage', '~> 5.1.1'
+pod 'IQKeyboardManager'
+pod 'MBProgressHUD'
+end
