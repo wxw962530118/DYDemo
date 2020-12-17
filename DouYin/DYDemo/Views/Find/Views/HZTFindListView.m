@@ -9,7 +9,7 @@
 #import "HZTFindListView.h"
 #import "HZTFindListLayout.h"
 #import "HZTFindListCell.h"
-#import "HZTPublishViewController.h"
+#import "HZTFindDetailsViewController.h"
 @interface HZTFindListView ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 @property (nonatomic, copy) void(^scrollCallback)(UIScrollView *scrollView);
@@ -82,7 +82,9 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    HZTPublishViewController * vc = [HZTPublishViewController new];
+    HZTFindListLayout * layout = self.contentArr[indexPath.row];
+    HZTFindDetailsViewController * vc = [HZTFindDetailsViewController new];
+    vc.layout = layout;
     [AppDelegate pushViewController:vc animated:YES];
 }
 

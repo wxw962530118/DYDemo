@@ -6,12 +6,13 @@
 //  Copyright © 2020 wangxw. All rights reserved.
 //
 
-#import "HZTBaseViewController.h"
-
+#import "HZTBasePagerViewController.h"
+#import "HZTFindListLayout.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HZTFindDetailsViewController : HZTBaseViewController
-
+@interface HZTFindDetailsViewController : HZTBasePagerViewController
+/**  */
+@property (nonatomic,strong) HZTFindListLayout * layout;
 @end
 
 NS_ASSUME_NONNULL_END

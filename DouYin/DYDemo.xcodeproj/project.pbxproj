@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C604A7E258B5BCA009756E3 /* HZTFindDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C604A7C258B5BCA009756E3 /* HZTFindDetailsViewController.m */; };
+		7C604A7F258B5BCA009756E3 /* HZTFindDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C604A7D258B5BCA009756E3 /* HZTFindDetailsViewController.xib */; };
+		7C604A83258B5C29009756E3 /* HZTFindDetailsSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C604A82258B5C29009756E3 /* HZTFindDetailsSectionView.m */; };
+		7C604A86258B5D5F009756E3 /* HZTFindDetailsSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C604A85258B5D5F009756E3 /* HZTFindDetailsSectionView.xib */; };
+		7C604A8A258B6320009756E3 /* HZTBaseTableListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C604A89258B6320009756E3 /* HZTBaseTableListView.m */; };
+		7C604A8D258B632D009756E3 /* HZTBaseTableListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C604A8C258B632D009756E3 /* HZTBaseTableListView.xib */; };
 		7CA45AC02580677100EFD59A /* HZTTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA45ABF2580677100EFD59A /* HZTTabbarViewController.m */; };
 		7CA45AC42580679000EFD59A /* HZTBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA45AC32580679000EFD59A /* HZTBaseNavigationController.m */; };
 		7CA45AC82580679D00EFD59A /* HZTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA45AC72580679D00EFD59A /* HZTBaseViewController.m */; };
@@ -81,6 +87,15 @@
 /* Begin PBXFileReference section */
 		07CF773E93828BDDDFA7CE0E /* libPods-DYDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DYDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		220A7EB74491E365DA57A1D8 /* Pods-DYDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYDemo.release.xcconfig"; path = "Target Support Files/Pods-DYDemo/Pods-DYDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7C604A7B258B5BCA009756E3 /* HZTFindDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTFindDetailsViewController.h; sourceTree = "<group>"; };
+		7C604A7C258B5BCA009756E3 /* HZTFindDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTFindDetailsViewController.m; sourceTree = "<group>"; };
+		7C604A7D258B5BCA009756E3 /* HZTFindDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HZTFindDetailsViewController.xib; sourceTree = "<group>"; };
+		7C604A81258B5C29009756E3 /* HZTFindDetailsSectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTFindDetailsSectionView.h; sourceTree = "<group>"; };
+		7C604A82258B5C29009756E3 /* HZTFindDetailsSectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTFindDetailsSectionView.m; sourceTree = "<group>"; };
+		7C604A85258B5D5F009756E3 /* HZTFindDetailsSectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HZTFindDetailsSectionView.xib; sourceTree = "<group>"; };
+		7C604A88258B6320009756E3 /* HZTBaseTableListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTBaseTableListView.h; sourceTree = "<group>"; };
+		7C604A89258B6320009756E3 /* HZTBaseTableListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTBaseTableListView.m; sourceTree = "<group>"; };
+		7C604A8C258B632D009756E3 /* HZTBaseTableListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HZTBaseTableListView.xib; sourceTree = "<group>"; };
 		7CA45ABE2580677100EFD59A /* HZTTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTTabbarViewController.h; sourceTree = "<group>"; };
 		7CA45ABF2580677100EFD59A /* HZTTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTTabbarViewController.m; sourceTree = "<group>"; };
 		7CA45AC22580679000EFD59A /* HZTBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTBaseNavigationController.h; sourceTree = "<group>"; };
@@ -510,6 +525,9 @@
 				7CD6DA2C25836932000519E3 /* HZTPublishViewController.h */,
 				7CD6DA2D25836932000519E3 /* HZTPublishViewController.m */,
 				7CD6DA2E25836932000519E3 /* HZTPublishViewController.xib */,
+				7C604A7B258B5BCA009756E3 /* HZTFindDetailsViewController.h */,
+				7C604A7C258B5BCA009756E3 /* HZTFindDetailsViewController.m */,
+				7C604A7D258B5BCA009756E3 /* HZTFindDetailsViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -530,6 +548,12 @@
 				7CFA883E258B27DB009D8E8E /* HZTPublishTextView.h */,
 				7CFA883F258B27DB009D8E8E /* HZTPublishTextView.m */,
 				7CFA8842258B27E5009D8E8E /* HZTPublishTextView.xib */,
+				7C604A81258B5C29009756E3 /* HZTFindDetailsSectionView.h */,
+				7C604A82258B5C29009756E3 /* HZTFindDetailsSectionView.m */,
+				7C604A85258B5D5F009756E3 /* HZTFindDetailsSectionView.xib */,
+				7C604A88258B6320009756E3 /* HZTBaseTableListView.h */,
+				7C604A89258B6320009756E3 /* HZTBaseTableListView.m */,
+				7C604A8C258B632D009756E3 /* HZTBaseTableListView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -642,13 +666,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CD6DA0B2581F4CA000519E3 /* HZTHomeMeListHeaderView.xib in Resources */,
+				7C604A8D258B632D009756E3 /* HZTBaseTableListView.xib in Resources */,
 				7CD6D9982580A07D000519E3 /* TableHeaderView.xib in Resources */,
+				7C604A7F258B5BCA009756E3 /* HZTFindDetailsViewController.xib in Resources */,
 				7CA45AE32580690900EFD59A /* HZTHomeViewController.xib in Resources */,
 				7CD6D9B42580BB15000519E3 /* HZTFindListView.xib in Resources */,
 				7CD6DA342583721F000519E3 /* nav_back@2x.png in Resources */,
 				7CFA87DE258A039C009D8E8E /* HZTMeProfileViewController.xib in Resources */,
 				7CCFCA6224BD888A0049A887 /* LaunchScreen.storyboard in Resources */,
 				7CD6DA3025836933000519E3 /* HZTPublishViewController.xib in Resources */,
+				7C604A86258B5D5F009756E3 /* HZTFindDetailsSectionView.xib in Resources */,
 				7CA45AF525806A2C00EFD59A /* tabbar_me_icon_2@2x.png in Resources */,
 				7CD6D99A2580A07D000519E3 /* NavBarView.xib in Resources */,
 				7CD6D9952580A07D000519E3 /* MainCollectionView.xib in Resources */,
@@ -717,6 +744,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CD6D9942580A07D000519E3 /* SectionView.m in Sources */,
+				7C604A7E258B5BCA009756E3 /* HZTFindDetailsViewController.m in Sources */,
 				7CA45ACD2580683F00EFD59A /* HZTTabbarItemModel.m in Sources */,
 				7CA45AE22580690900EFD59A /* HZTHomeViewController.m in Sources */,
 				7CD6D9932580A07D000519E3 /* NavBarView.m in Sources */,
@@ -732,6 +760,7 @@
 				7CD6D9922580A07D000519E3 /* MainCollectionView.m in Sources */,
 				7CA45AC42580679000EFD59A /* HZTBaseNavigationController.m in Sources */,
 				7CA45AC82580679D00EFD59A /* HZTBaseViewController.m in Sources */,
+				7C604A8A258B6320009756E3 /* HZTBaseTableListView.m in Sources */,
 				7CFA8840258B27DB009D8E8E /* HZTPublishTextView.m in Sources */,
 				7CD6D96325807609000519E3 /* UIViewController+JZExtension.m in Sources */,
 				7CCFCA5424BD88840049A887 /* AppDelegate.m in Sources */,
@@ -745,6 +774,7 @@
 				7CCFCA9024BD98350049A887 /* JXPagerView.m in Sources */,
 				7CFA882E258B0AAA009D8E8E /* UIImage+circleImage.m in Sources */,
 				7CD6D9B12580B9CA000519E3 /* HZTFindListView.m in Sources */,
+				7C604A83258B5C29009756E3 /* HZTFindDetailsSectionView.m in Sources */,
 				7CCFCA9224BD98350049A887 /* JXPagerListRefreshView.m in Sources */,
 				7CCFCA6524BD888A0049A887 /* main.m in Sources */,
 				7CD6D9C62580C8EB000519E3 /* HZTMediaFileModel.m in Sources */,

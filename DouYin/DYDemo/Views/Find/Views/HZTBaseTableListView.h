@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "JXPagerView.h"
 NS_ASSUME_NONNULL_BEGIN
-
-@interface HZTBaseTableListView : UIView
-
+@interface HZTBaseTableListView : UIView<JXPagerViewListViewDelegate>
++(instancetype)create;
 @end
 
 NS_ASSUME_NONNULL_END

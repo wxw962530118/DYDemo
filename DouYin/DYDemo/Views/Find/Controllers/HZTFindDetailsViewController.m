@@ -7,8 +7,14 @@
 //
 
 #import "HZTFindDetailsViewController.h"
-
+#import "HZTBaseTableListView.h"
+#import "HZTFindDetailsSectionView.h"
+#import "HZTFindListCell.h"
 @interface HZTFindDetailsViewController ()
+/**  */
+@property (nonatomic,strong) HZTFindDetailsSectionView * sectionView;
+/**  */
+@property (nonatomic,strong) HZTFindListCell * headerView;
 
 @end
 
@@ -16,17 +22,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self configInfo];
+    [super loadSubView];
+    self.sectionView.listContainer = self.listContainer;
+    self.headerView.layout = self.layout;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(HZTFindListCell *)headerView{
+    if (!_headerView) {
+        _headerView = [[NSBundle mainBundle] loadNibNamed:@"HZTFindListCell" owner:nil options:nil].firstObject;
+    }
+    return _headerView;
 }
-*/
+
+-(HZTFindDetailsSectionView *)sectionView{
+    if (!_sectionView) {
+        _sectionView = [HZTFindDetailsSectionView create];
+        _sectionView.titles = @[@"评论",@"礼物"];
+        _sectionView.frame = CGRectMake(0, 0, kScreenW, 50);
+    }
+    return _sectionView;
+}
+
+-(void)configInfo{
+    self.navigationItem.title = @"动态详情";
+    self.isHiddenNav = YES;
+    self.pagerSectionView = self.sectionView;
+    self.pagerSectionViewH = self.sectionView.height;
+    self.pagerHeaderView = self.headerView;
+    self.pagerHeaderViewH = self.layout.cellH;
+    self.categoryTitles = self.sectionView.titles;
+    self.pagerViews = @[[HZTBaseTableListView create],[HZTBaseTableListView create]];
+}
 
 @end

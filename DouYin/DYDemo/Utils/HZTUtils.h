@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#define CurrentVersion                 [ToolBaseClass getCurrentVersion]
-
 @interface HZTUtils : NSObject
 /**获取应用根视图 */
 +(UIWindow *)getRootWindow;

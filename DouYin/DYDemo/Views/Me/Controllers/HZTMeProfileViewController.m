@@ -69,7 +69,6 @@
         _sectionView = [[HZTMeProfileSectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, 54) titles:@[@"资料", @"礼物墙", @"动态"]];
         [_sectionView setDidCallBack:^(NSInteger index) {
             weakSelf.navigationController.interactivePopGestureRecognizer.enabled = (index == 0);
-            //[weakSelf.pagerView.mainTableView setContentOffset:CGPointMake(0, 0) animated:NO];
         }];
     }
     return _sectionView;

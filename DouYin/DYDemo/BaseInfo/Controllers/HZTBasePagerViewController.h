@@ -12,6 +12,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HZTBasePagerViewController : HZTBaseViewController<JXPagerViewDelegate>
+/**不显示自定义导航栏*/
+@property (nonatomic,assign) BOOL isHiddenNav;
 /**顶部可切换分类数据源*/
 @property (nonatomic,strong) NSArray * categoryTitles;
 /**底部滚动视图*/
@@ -26,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,assign) CGFloat pagerSectionViewH;
 /**特殊页面<ps:嵌套下拉刷新> 子类自己声明*/
 @property (nonatomic, strong) JXPagerView * pagerView;
+/***/
+@property (nonatomic, weak) id<JXCategoryViewListContainer> listContainer;
 /**子类必须实现的方法  调用顺序在设置数据源之后*/
 -(void)loadSubView;
 @end
