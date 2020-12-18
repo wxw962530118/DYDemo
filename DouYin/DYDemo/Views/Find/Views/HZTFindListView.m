@@ -77,6 +77,7 @@
     if (!cell) {
         cell = [[NSBundle mainBundle] loadNibNamed:@"HZTFindListCell" owner:nil options:nil].firstObject;
     }
+    cell.isHiddenLine = self.contentArr.count-1==indexPath.row;
     cell.layout = self.contentArr[indexPath.row];
     return cell;
 }

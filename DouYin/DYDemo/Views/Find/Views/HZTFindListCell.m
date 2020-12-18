@@ -27,6 +27,12 @@
     [super awakeFromNib];
 }
 
+
+-(void)setIsHiddenLine:(BOOL)isHiddenLine{
+    _isHiddenLine = isHiddenLine;
+    self.lineView.hidden = isHiddenLine;
+}
+
 -(void)setLayout:(HZTFindListLayout *)layout{
     _layout = layout;
     self.contentLabel.text = layout.listModel.text;

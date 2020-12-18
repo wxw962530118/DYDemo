@@ -21,6 +21,10 @@
 		7C604A9F258C45B5009756E3 /* HZTCommentListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C604A9D258C45B5009756E3 /* HZTCommentListCell.xib */; };
 		7C604AA4258C4EEC009756E3 /* HZTGiftListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C604AA2258C4EEC009756E3 /* HZTGiftListCell.m */; };
 		7C604AA5258C4EEC009756E3 /* HZTGiftListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C604AA3258C4EEC009756E3 /* HZTGiftListCell.xib */; };
+		7C7275CF258CB4E0007CD04F /* HZTBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7275CD258CB4E0007CD04F /* HZTBaseCollectionViewController.m */; };
+		7C7275D0258CB4E0007CD04F /* HZTBaseCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C7275CE258CB4E0007CD04F /* HZTBaseCollectionViewController.xib */; };
+		7C7275D5258CB816007CD04F /* HZTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7275D3258CB816007CD04F /* HZTBaseTableViewController.m */; };
+		7C7275D6258CB816007CD04F /* HZTBaseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C7275D4258CB816007CD04F /* HZTBaseTableViewController.xib */; };
 		7CA45AC02580677100EFD59A /* HZTTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA45ABF2580677100EFD59A /* HZTTabbarViewController.m */; };
 		7CA45AC42580679000EFD59A /* HZTBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA45AC32580679000EFD59A /* HZTBaseNavigationController.m */; };
 		7CA45AC82580679D00EFD59A /* HZTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA45AC72580679D00EFD59A /* HZTBaseViewController.m */; };
@@ -53,14 +57,10 @@
 		7CD6D97425807C82000519E3 /* HZTFindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD6D97225807C82000519E3 /* HZTFindViewController.xib */; };
 		7CD6D97925809E65000519E3 /* HZTCustomTitleNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6D97825809E65000519E3 /* HZTCustomTitleNavView.m */; };
 		7CD6D98125809FC6000519E3 /* HZTThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6D98025809FC6000519E3 /* HZTThemes.m */; };
-		7CD6D9922580A07D000519E3 /* MainCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6D9842580A07A000519E3 /* MainCollectionView.m */; };
 		7CD6D9932580A07D000519E3 /* NavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6D9862580A07A000519E3 /* NavBarView.m */; };
 		7CD6D9942580A07D000519E3 /* SectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6D9872580A07B000519E3 /* SectionView.m */; };
-		7CD6D9952580A07D000519E3 /* MainCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD6D9892580A07B000519E3 /* MainCollectionView.xib */; };
 		7CD6D9962580A07D000519E3 /* TableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6D98A2580A07B000519E3 /* TableHeaderView.m */; };
-		7CD6D9972580A07D000519E3 /* MainTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6D98B2580A07B000519E3 /* MainTableView.m */; };
 		7CD6D9982580A07D000519E3 /* TableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD6D98E2580A07D000519E3 /* TableHeaderView.xib */; };
-		7CD6D9992580A07D000519E3 /* MainTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD6D98F2580A07D000519E3 /* MainTableView.xib */; };
 		7CD6D99A2580A07D000519E3 /* NavBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD6D9902580A07D000519E3 /* NavBarView.xib */; };
 		7CD6D9A32580A355000519E3 /* HZTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6D9A22580A355000519E3 /* HZTUtils.m */; };
 		7CD6D9B12580B9CA000519E3 /* HZTFindListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6D9B02580B9CA000519E3 /* HZTFindListView.m */; };
@@ -117,6 +117,12 @@
 		7C604AA1258C4EEC009756E3 /* HZTGiftListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTGiftListCell.h; sourceTree = "<group>"; };
 		7C604AA2258C4EEC009756E3 /* HZTGiftListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTGiftListCell.m; sourceTree = "<group>"; };
 		7C604AA3258C4EEC009756E3 /* HZTGiftListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HZTGiftListCell.xib; sourceTree = "<group>"; };
+		7C7275CC258CB4E0007CD04F /* HZTBaseCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTBaseCollectionViewController.h; sourceTree = "<group>"; };
+		7C7275CD258CB4E0007CD04F /* HZTBaseCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTBaseCollectionViewController.m; sourceTree = "<group>"; };
+		7C7275CE258CB4E0007CD04F /* HZTBaseCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HZTBaseCollectionViewController.xib; sourceTree = "<group>"; };
+		7C7275D2258CB816007CD04F /* HZTBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTBaseTableViewController.h; sourceTree = "<group>"; };
+		7C7275D3258CB816007CD04F /* HZTBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTBaseTableViewController.m; sourceTree = "<group>"; };
+		7C7275D4258CB816007CD04F /* HZTBaseTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HZTBaseTableViewController.xib; sourceTree = "<group>"; };
 		7CA45ABE2580677100EFD59A /* HZTTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTTabbarViewController.h; sourceTree = "<group>"; };
 		7CA45ABF2580677100EFD59A /* HZTTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTTabbarViewController.m; sourceTree = "<group>"; };
 		7CA45AC22580679000EFD59A /* HZTBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTBaseNavigationController.h; sourceTree = "<group>"; };
@@ -174,20 +180,14 @@
 		7CD6D97D25809F48000519E3 /* HZTMacroColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTMacroColors.h; sourceTree = "<group>"; };
 		7CD6D97F25809FC6000519E3 /* HZTThemes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTThemes.h; sourceTree = "<group>"; };
 		7CD6D98025809FC6000519E3 /* HZTThemes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTThemes.m; sourceTree = "<group>"; };
-		7CD6D9842580A07A000519E3 /* MainCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCollectionView.m; sourceTree = "<group>"; };
 		7CD6D9852580A07A000519E3 /* SectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionView.h; sourceTree = "<group>"; };
 		7CD6D9862580A07A000519E3 /* NavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavBarView.m; sourceTree = "<group>"; };
 		7CD6D9872580A07B000519E3 /* SectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionView.m; sourceTree = "<group>"; };
 		7CD6D9882580A07B000519E3 /* TableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableHeaderView.h; sourceTree = "<group>"; };
-		7CD6D9892580A07B000519E3 /* MainCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCollectionView.xib; sourceTree = "<group>"; };
 		7CD6D98A2580A07B000519E3 /* TableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableHeaderView.m; sourceTree = "<group>"; };
-		7CD6D98B2580A07B000519E3 /* MainTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableView.m; sourceTree = "<group>"; };
-		7CD6D98C2580A07C000519E3 /* MainCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCollectionView.h; sourceTree = "<group>"; };
 		7CD6D98D2580A07C000519E3 /* NavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavBarView.h; sourceTree = "<group>"; };
 		7CD6D98E2580A07D000519E3 /* TableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableHeaderView.xib; sourceTree = "<group>"; };
-		7CD6D98F2580A07D000519E3 /* MainTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableView.xib; sourceTree = "<group>"; };
 		7CD6D9902580A07D000519E3 /* NavBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavBarView.xib; sourceTree = "<group>"; };
-		7CD6D9912580A07D000519E3 /* MainTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableView.h; sourceTree = "<group>"; };
 		7CD6D99D2580A138000519E3 /* hzt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hzt-Prefix.pch"; sourceTree = "<group>"; };
 		7CD6D9A12580A355000519E3 /* HZTUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTUtils.h; sourceTree = "<group>"; };
 		7CD6D9A22580A355000519E3 /* HZTUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTUtils.m; sourceTree = "<group>"; };
@@ -280,6 +280,12 @@
 				7CA45AC72580679D00EFD59A /* HZTBaseViewController.m */,
 				7CD6D9D02581B5F9000519E3 /* HZTBasePagerViewController.h */,
 				7CD6D9D12581B5F9000519E3 /* HZTBasePagerViewController.m */,
+				7C7275CC258CB4E0007CD04F /* HZTBaseCollectionViewController.h */,
+				7C7275CD258CB4E0007CD04F /* HZTBaseCollectionViewController.m */,
+				7C7275CE258CB4E0007CD04F /* HZTBaseCollectionViewController.xib */,
+				7C7275D2258CB816007CD04F /* HZTBaseTableViewController.h */,
+				7C7275D3258CB816007CD04F /* HZTBaseTableViewController.m */,
+				7C7275D4258CB816007CD04F /* HZTBaseTableViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -380,12 +386,6 @@
 		7CA45AD7258068C400EFD59A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7CD6D98C2580A07C000519E3 /* MainCollectionView.h */,
-				7CD6D9842580A07A000519E3 /* MainCollectionView.m */,
-				7CD6D9892580A07B000519E3 /* MainCollectionView.xib */,
-				7CD6D9912580A07D000519E3 /* MainTableView.h */,
-				7CD6D98B2580A07B000519E3 /* MainTableView.m */,
-				7CD6D98F2580A07D000519E3 /* MainTableView.xib */,
 				7CD6D98D2580A07C000519E3 /* NavBarView.h */,
 				7CD6D9862580A07A000519E3 /* NavBarView.m */,
 				7CD6D9902580A07D000519E3 /* NavBarView.xib */,
@@ -707,11 +707,11 @@
 				7CD6DA342583721F000519E3 /* nav_back@2x.png in Resources */,
 				7CFA87DE258A039C009D8E8E /* HZTMeProfileViewController.xib in Resources */,
 				7CCFCA6224BD888A0049A887 /* LaunchScreen.storyboard in Resources */,
+				7C7275D0258CB4E0007CD04F /* HZTBaseCollectionViewController.xib in Resources */,
 				7CD6DA3025836933000519E3 /* HZTPublishViewController.xib in Resources */,
 				7C604A86258B5D5F009756E3 /* HZTFindDetailsSectionView.xib in Resources */,
 				7CA45AF525806A2C00EFD59A /* tabbar_me_icon_2@2x.png in Resources */,
 				7CD6D99A2580A07D000519E3 /* NavBarView.xib in Resources */,
-				7CD6D9952580A07D000519E3 /* MainCollectionView.xib in Resources */,
 				7CD6D9E62581CA0A000519E3 /* HZTHomeLiveItemListView.xib in Resources */,
 				7CD6D9BA2580C455000519E3 /* HZTFindListCell.xib in Resources */,
 				7CCFCA5F24BD888A0049A887 /* Assets.xcassets in Resources */,
@@ -719,7 +719,7 @@
 				7CA45ADC258068FE00EFD59A /* HZTMeViewController.xib in Resources */,
 				7CA45AF725806A2C00EFD59A /* tabbar_home_icon_2@2x.png in Resources */,
 				7CFA8843258B27E5009D8E8E /* HZTPublishTextView.xib in Resources */,
-				7CD6D9992580A07D000519E3 /* MainTableView.xib in Resources */,
+				7C7275D6258CB816007CD04F /* HZTBaseTableViewController.xib in Resources */,
 				7CA45AF625806A2C00EFD59A /* tabbar_home_icon_1@2x.png in Resources */,
 				7CD6D97425807C82000519E3 /* HZTFindViewController.xib in Resources */,
 				7CA45AF425806A2C00EFD59A /* tabbar_me_icon_1@2x.png in Resources */,
@@ -777,6 +777,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CD6D9942580A07D000519E3 /* SectionView.m in Sources */,
+				7C7275D5258CB816007CD04F /* HZTBaseTableViewController.m in Sources */,
 				7C604A7E258B5BCA009756E3 /* HZTFindDetailsViewController.m in Sources */,
 				7CA45ACD2580683F00EFD59A /* HZTTabbarItemModel.m in Sources */,
 				7CA45AE22580690900EFD59A /* HZTHomeViewController.m in Sources */,
@@ -792,7 +793,6 @@
 				7CD6D96425807609000519E3 /* _JZNavigationDelegating.m in Sources */,
 				7CCFCA8E24BD98350049A887 /* JXPagerListContainerView.m in Sources */,
 				7CD6D9E32581CA01000519E3 /* HZTHomeLiveItemListView.m in Sources */,
-				7CD6D9922580A07D000519E3 /* MainCollectionView.m in Sources */,
 				7CA45AC42580679000EFD59A /* HZTBaseNavigationController.m in Sources */,
 				7CA45AC82580679D00EFD59A /* HZTBaseViewController.m in Sources */,
 				7C604A8A258B6320009756E3 /* HZTBaseTableListView.m in Sources */,
@@ -815,7 +815,6 @@
 				7CCFCA6524BD888A0049A887 /* main.m in Sources */,
 				7CD6D9C62580C8EB000519E3 /* HZTMediaFileModel.m in Sources */,
 				7CD6D98125809FC6000519E3 /* HZTThemes.m in Sources */,
-				7CD6D9972580A07D000519E3 /* MainTableView.m in Sources */,
 				7CFA87E2258A0871009D8E8E /* HZTMeProfileSectionView.m in Sources */,
 				7CFA87DD258A039C009D8E8E /* HZTMeProfileViewController.m in Sources */,
 				7CD6D9962580A07D000519E3 /* TableHeaderView.m in Sources */,
@@ -828,6 +827,7 @@
 				7CD6D9BE2580C7F5000519E3 /* HZTFindListModel.m in Sources */,
 				7CD6D9DF2581C59F000519E3 /* HZTPagerView.m in Sources */,
 				7C0D33C1258C966D006AACA4 /* HZTHomeMeListViewController.m in Sources */,
+				7C7275CF258CB4E0007CD04F /* HZTBaseCollectionViewController.m in Sources */,
 				7CD6D9C22580C81E000519E3 /* HZTFindListLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

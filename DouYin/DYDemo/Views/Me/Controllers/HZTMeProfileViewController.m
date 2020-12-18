@@ -7,9 +7,9 @@
 //
 
 #import "HZTMeProfileViewController.h"
-#import "MainCollectionView.h"
 #import "JXPagerListRefreshView.h"
 #import "HZTMeProfileSectionView.h"
+#import "HZTBaseCollectionViewController.h"
 @interface HZTMeProfileViewController ()<JXPagerViewDelegate>
 @property (weak, nonatomic) IBOutlet UIView *topBgView;
 
@@ -57,10 +57,7 @@
 }
 
 -(id<JXPagerViewListViewDelegate>)pagerView:(JXPagerView *)pagerView initListAtIndex:(NSInteger)index {
-    MainCollectionView * view = [MainCollectionView createView];
-    view.count = index==0 ? 30 : 50;
-    view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
-    return view;
+    return [HZTBaseCollectionViewController new];
 }
 
 -(HZTMeProfileSectionView *)sectionView{

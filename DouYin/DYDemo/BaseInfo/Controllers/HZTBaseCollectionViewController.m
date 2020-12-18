@@ -1,14 +1,14 @@
 //
-//  MainCollectionView.m
+//  HZTBaseCollectionViewController.m
 //  DYDemo
 //
-//  Created by wangxw on 2020/7/14.
+//  Created by wangxw on 2020/12/18.
 //  Copyright © 2020 wangxw. All rights reserved.
 //
 
-#import "MainCollectionView.h"
+#import "HZTBaseCollectionViewController.h"
 #import "HZTMeProfileViewController.h"
-@interface MainCollectionView ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>{
+@interface HZTBaseCollectionViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>{
     CGFloat _itemW;
     CGFloat _itemH;
 }
@@ -16,15 +16,10 @@
 @property (nonatomic, copy) void(^scrollCallback)(UIScrollView *scrollView);
 @end
 
-@implementation MainCollectionView
+@implementation HZTBaseCollectionViewController
 
-+(instancetype)createView{
-    MainCollectionView * view = [[NSBundle mainBundle] loadNibNamed:@"MainCollectionView" owner:nil options:nil].firstObject;
-    return view;
-}
-
--(void)awakeFromNib{
-    [super awakeFromNib];
+- (void)viewDidLoad {
+    [super viewDidLoad];
     int cnt = 3;
     float lineSpace = 2;
     float scaleWH = 1.3;
@@ -35,13 +30,8 @@
     [self.mainCollectionView registerClass:NSClassFromString(@"UICollectionViewCell") forCellWithReuseIdentifier:@"UICollectionViewCell"];
 }
 
--(void)setCount:(NSInteger)count{
-    _count = count;
-    [self.mainCollectionView reloadData];
-}
-
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return self.count;
+    return 20;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -67,8 +57,15 @@
     [AppDelegate pushViewController:vc animated:YES];
 }
 
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView
+                       layout:(UICollectionViewLayout *)collectionViewLayout
+       insetForSectionAtIndex:(NSInteger)section{
+    return UIEdgeInsetsMake(0,0, 0, 0);
+}
+
+
 - (UIView *)listView {
-    return self;
+    return self.view;
 }
 
 - (UIScrollView *)listScrollView {

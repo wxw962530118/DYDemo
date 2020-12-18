@@ -9,10 +9,10 @@
 #import "HZTMeViewController.h"
 #import "SectionView.h"
 #import <JXCategoryView.h>
-#import "MainCollectionView.h"
-#import "MainTableView.h"
 #import "TableHeaderView.h"
 #import "NavBarView.h"
+#import "HZTBaseCollectionViewController.h"
+#import "HZTBaseTableViewController.h"
 #define kHeaderViewH 300
 #define kSectionViewH 50
 @interface HZTMeViewController ()<JXCategoryViewDelegate>
@@ -31,15 +31,9 @@
     self.curIndex = -1;
     self.categoryView.indicators = @[self.lineView];
     self.pagerView.mainTableView.gestureDelegate = self;
-    [self.view addSubview:self.pagerView];
     [self.view addSubview:self.navView];
     self.pagerView.pinSectionHeaderVerticalOffset = NavBarHeight;
     self.categoryView.listContainer = (id<JXCategoryViewListContainer>)self.pagerView.listContainerView;
-}
-
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    self.pagerView.frame = self.view.bounds;
 }
 
 #pragma mark - JXPagerViewDelegate
@@ -65,14 +59,9 @@
 
 -(id<JXPagerViewListViewDelegate>)pagerView:(JXPagerView *)pagerView initListAtIndex:(NSInteger)index {
     if (index==0 || index==2) {
-        MainCollectionView * view = [MainCollectionView createView];
-        view.count = index==0 ? 30 : 50;
-        view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
-        return view;
+        return [HZTBaseCollectionViewController new];
     }else{
-        MainTableView * view = [MainTableView createView];
-        view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
-        return view;
+        return [HZTBaseTableViewController new];
     }
 }
 
@@ -91,7 +80,6 @@
 
 #pragma mark - JXPagerMainTableViewGestureDelegate
 -(BOOL)mainTableViewGestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-    //禁止categoryView左右滑动的时候，上下和左右都可以滚动
     if (otherGestureRecognizer == self.categoryView.collectionView.panGestureRecognizer) {
         return NO;
     }
@@ -138,6 +126,11 @@
 -(JXPagerView *)pagerView {
     if (!_pagerView) {
         _pagerView = [[JXPagerView alloc] initWithDelegate:self];
+        [self.view addSubview:_pagerView];
+        [_pagerView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.right.left.equalTo(self.view);
+            make.bottom.equalTo(self.view).offset(-49-SafeAreaBottom());
+        }];
     }
     return _pagerView;
 }

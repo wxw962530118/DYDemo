@@ -1,38 +1,34 @@
 //
-//  MainTableView.m
+//  HZTBaseTableViewController.m
 //  DYDemo
 //
-//  Created by wangxw on 2020/7/14.
+//  Created by wangxw on 2020/12/18.
 //  Copyright © 2020 wangxw. All rights reserved.
 //
 
-#import "MainTableView.h"
+#import "HZTBaseTableViewController.h"
 
-@interface MainTableView ()<UITableViewDelegate,UITableViewDataSource>
+@interface HZTBaseTableViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 @property (nonatomic, copy) void(^scrollCallback)(UIScrollView *scrollView);
 @end
 
-@implementation MainTableView
+@implementation HZTBaseTableViewController
 
-+(instancetype)createView{
-    MainTableView * view = [[NSBundle mainBundle] loadNibNamed:@"MainTableView" owner:nil options:nil].firstObject;
-    return view;
-}
-
--(void)awakeFromNib{
-    [super awakeFromNib];
-    self.mainTableView.delegate = self;
-    self.mainTableView.dataSource = self;
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self.mainTableView setTableFooterView:[UIView new]];
     [self.mainTableView reloadData];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return 10;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return [UITableViewCell new];
+    UITableViewCell * cell = [UITableViewCell new];
+    cell.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
+    return cell;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -40,7 +36,7 @@
 }
 
 - (UIView *)listView {
-    return self;
+    return self.view;
 }
 
 - (UIScrollView *)listScrollView {

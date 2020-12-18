@@ -8,7 +8,6 @@
 
 #import "HZTBasePagerViewController.h"
 #import "HZTCustomTitleNavView.h"
-#import "MainCollectionView.h"
 #import "HZTFindListView.h"
 @interface HZTBasePagerViewController ()
 @property (nonatomic, strong) HZTCustomTitleNavView * navView;

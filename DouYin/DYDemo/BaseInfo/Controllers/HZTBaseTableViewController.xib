@@ -9,9 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HZTFindViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HZTBaseTableViewController">
             <connections>
-                <outlet property="publishBtn" destination="AZD-Lf-2Mj" id="6VB-9y-khB"/>
+                <outlet property="mainTableView" destination="rqd-hd-AAb" id="vSR-OW-oUu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,36 +20,29 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZD-Lf-2Mj">
-                    <rect key="frame" x="335" y="783" width="64" height="64"/>
-                    <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="64" id="Axe-Lg-ZP8"/>
-                        <constraint firstAttribute="width" constant="64" id="DfL-cu-Puv"/>
-                    </constraints>
-                    <state key="normal" title="发布">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rqd-hd-AAb">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
-                        <action selector="clickPublishBtn:" destination="-1" eventType="touchUpInside" id="Tz6-Ak-NlF"/>
+                        <outlet property="dataSource" destination="-1" id="NNC-y8-dr9"/>
+                        <outlet property="delegate" destination="-1" id="ovu-fc-mnC"/>
                     </connections>
-                </button>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="AZD-Lf-2Mj" secondAttribute="trailing" constant="15" id="Pj9-od-abv"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="AZD-Lf-2Mj" secondAttribute="bottom" constant="15" id="qeQ-7s-AAs"/>
+                <constraint firstItem="rqd-hd-AAb" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="8fq-OI-dia"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="rqd-hd-AAb" secondAttribute="trailing" id="UQP-HP-5rP"/>
+                <constraint firstItem="rqd-hd-AAb" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="fpZ-Xi-772"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="rqd-hd-AAb" secondAttribute="bottom" id="gej-Lr-ugm"/>
             </constraints>
-            <point key="canvasLocation" x="123" y="117"/>
+            <point key="canvasLocation" x="128" y="102"/>
         </view>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

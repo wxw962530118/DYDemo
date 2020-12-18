@@ -13,7 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HZTFindListCell : UITableViewCell
 /**  */
 @property (nonatomic,strong) HZTFindListLayout * layout;
-
+/**  */
+@property (nonatomic,assign) BOOL isHiddenLine;
 @end
 
 NS_ASSUME_NONNULL_END
