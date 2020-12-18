@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HZTBasePagerViewController : HZTBaseViewController<JXPagerViewDelegate>
 /**不显示自定义导航栏*/
 @property (nonatomic,assign) BOOL isHiddenNav;
+/**底部间距默认为0*/
+@property (nonatomic,assign) CGFloat bottomMargin;
 /**顶部可切换分类数据源*/
 @property (nonatomic,strong) NSArray * categoryTitles;
 /**底部滚动视图*/

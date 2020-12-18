@@ -29,8 +29,8 @@
 +(id)getUserDefaultsWithKey:(NSString *)key;
 /**删除存储的用户偏好*/
 +(void)removeUserDefaultsWithKey:(NSString *)key;
-/**判断设备是否底部带有安全区域*/
-+(BOOL)hasSafeArea;
+/**设备底部安全区域*/
++(CGFloat)safeAreaBottom;
 /**格式化时间戳 是否以.连接*/
 +(NSString *)dateWithTimeInterval:(NSTimeInterval)timeInterval isAdot:(BOOL)isAdot;
 //图片质量比例压缩
@@ -39,6 +39,6 @@
 + (UIImage *)redrawImage:(UIImage *)img Width:(NSInteger)width Height:(NSInteger)height;
 @end
 
-CG_INLINE BOOL IS_IPhoneX(){
-    return [HZTUtils hasSafeArea];
+CG_INLINE CGFloat SafeAreaBottom(){
+    return [HZTUtils safeAreaBottom];
 };

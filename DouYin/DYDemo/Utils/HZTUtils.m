@@ -100,18 +100,13 @@
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
 }
 
-+(BOOL)hasSafeArea{
-    BOOL iPhoneXSeries = NO;
-    if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
-        return iPhoneXSeries;
-    }
++(CGFloat)safeAreaBottom{
+    CGFloat safeAreaInsetBottom = 0.0;
     if (@available(iOS 11.0, *)) {
         UIWindow * mainWindow = [[[UIApplication sharedApplication] delegate] window];
-        if (mainWindow.safeAreaInsets.bottom > 0.0) {
-            iPhoneXSeries = YES;
-        }
+        safeAreaInsetBottom = mainWindow.safeAreaInsets.bottom;
     }
-    return iPhoneXSeries;
+    return safeAreaInsetBottom;
 }
 
 + (UIImage *)compress:(UIImage *)image Scale:(float)scale {

@@ -13,6 +13,13 @@
 		7C604A86258B5D5F009756E3 /* HZTFindDetailsSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C604A85258B5D5F009756E3 /* HZTFindDetailsSectionView.xib */; };
 		7C604A8A258B6320009756E3 /* HZTBaseTableListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C604A89258B6320009756E3 /* HZTBaseTableListView.m */; };
 		7C604A8D258B632D009756E3 /* HZTBaseTableListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C604A8C258B632D009756E3 /* HZTBaseTableListView.xib */; };
+		7C604A91258C433F009756E3 /* HZTBaseTableListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C604A90258C433F009756E3 /* HZTBaseTableListModel.m */; };
+		7C604A95258C434F009756E3 /* HZTBaseTableListLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C604A94258C434F009756E3 /* HZTBaseTableListLayout.m */; };
+		7C604A99258C43B3009756E3 /* HZTBaseTableListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C604A98258C43B3009756E3 /* HZTBaseTableListCell.m */; };
+		7C604A9E258C45B5009756E3 /* HZTCommentListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C604A9C258C45B5009756E3 /* HZTCommentListCell.m */; };
+		7C604A9F258C45B5009756E3 /* HZTCommentListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C604A9D258C45B5009756E3 /* HZTCommentListCell.xib */; };
+		7C604AA4258C4EEC009756E3 /* HZTGiftListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C604AA2258C4EEC009756E3 /* HZTGiftListCell.m */; };
+		7C604AA5258C4EEC009756E3 /* HZTGiftListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C604AA3258C4EEC009756E3 /* HZTGiftListCell.xib */; };
 		7CA45AC02580677100EFD59A /* HZTTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA45ABF2580677100EFD59A /* HZTTabbarViewController.m */; };
 		7CA45AC42580679000EFD59A /* HZTBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA45AC32580679000EFD59A /* HZTBaseNavigationController.m */; };
 		7CA45AC82580679D00EFD59A /* HZTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA45AC72580679D00EFD59A /* HZTBaseViewController.m */; };
@@ -96,6 +103,18 @@
 		7C604A88258B6320009756E3 /* HZTBaseTableListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTBaseTableListView.h; sourceTree = "<group>"; };
 		7C604A89258B6320009756E3 /* HZTBaseTableListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTBaseTableListView.m; sourceTree = "<group>"; };
 		7C604A8C258B632D009756E3 /* HZTBaseTableListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HZTBaseTableListView.xib; sourceTree = "<group>"; };
+		7C604A8F258C433F009756E3 /* HZTBaseTableListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTBaseTableListModel.h; sourceTree = "<group>"; };
+		7C604A90258C433F009756E3 /* HZTBaseTableListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTBaseTableListModel.m; sourceTree = "<group>"; };
+		7C604A93258C434F009756E3 /* HZTBaseTableListLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTBaseTableListLayout.h; sourceTree = "<group>"; };
+		7C604A94258C434F009756E3 /* HZTBaseTableListLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTBaseTableListLayout.m; sourceTree = "<group>"; };
+		7C604A97258C43B3009756E3 /* HZTBaseTableListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTBaseTableListCell.h; sourceTree = "<group>"; };
+		7C604A98258C43B3009756E3 /* HZTBaseTableListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTBaseTableListCell.m; sourceTree = "<group>"; };
+		7C604A9B258C45B5009756E3 /* HZTCommentListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTCommentListCell.h; sourceTree = "<group>"; };
+		7C604A9C258C45B5009756E3 /* HZTCommentListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTCommentListCell.m; sourceTree = "<group>"; };
+		7C604A9D258C45B5009756E3 /* HZTCommentListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HZTCommentListCell.xib; sourceTree = "<group>"; };
+		7C604AA1258C4EEC009756E3 /* HZTGiftListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTGiftListCell.h; sourceTree = "<group>"; };
+		7C604AA2258C4EEC009756E3 /* HZTGiftListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTGiftListCell.m; sourceTree = "<group>"; };
+		7C604AA3258C4EEC009756E3 /* HZTGiftListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HZTGiftListCell.xib; sourceTree = "<group>"; };
 		7CA45ABE2580677100EFD59A /* HZTTabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTTabbarViewController.h; sourceTree = "<group>"; };
 		7CA45ABF2580677100EFD59A /* HZTTabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTTabbarViewController.m; sourceTree = "<group>"; };
 		7CA45AC22580679000EFD59A /* HZTBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTBaseNavigationController.h; sourceTree = "<group>"; };
@@ -512,6 +531,10 @@
 				7CD6D9C52580C8EB000519E3 /* HZTMediaFileModel.m */,
 				7CFA8828258B00C6009D8E8E /* HZTFilesModel.h */,
 				7CFA8829258B00C6009D8E8E /* HZTFilesModel.m */,
+				7C604A8F258C433F009756E3 /* HZTBaseTableListModel.h */,
+				7C604A90258C433F009756E3 /* HZTBaseTableListModel.m */,
+				7C604A93258C434F009756E3 /* HZTBaseTableListLayout.h */,
+				7C604A94258C434F009756E3 /* HZTBaseTableListLayout.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -554,6 +577,14 @@
 				7C604A88258B6320009756E3 /* HZTBaseTableListView.h */,
 				7C604A89258B6320009756E3 /* HZTBaseTableListView.m */,
 				7C604A8C258B632D009756E3 /* HZTBaseTableListView.xib */,
+				7C604A97258C43B3009756E3 /* HZTBaseTableListCell.h */,
+				7C604A98258C43B3009756E3 /* HZTBaseTableListCell.m */,
+				7C604A9B258C45B5009756E3 /* HZTCommentListCell.h */,
+				7C604A9C258C45B5009756E3 /* HZTCommentListCell.m */,
+				7C604A9D258C45B5009756E3 /* HZTCommentListCell.xib */,
+				7C604AA1258C4EEC009756E3 /* HZTGiftListCell.h */,
+				7C604AA2258C4EEC009756E3 /* HZTGiftListCell.m */,
+				7C604AA3258C4EEC009756E3 /* HZTGiftListCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -669,7 +700,9 @@
 				7C604A8D258B632D009756E3 /* HZTBaseTableListView.xib in Resources */,
 				7CD6D9982580A07D000519E3 /* TableHeaderView.xib in Resources */,
 				7C604A7F258B5BCA009756E3 /* HZTFindDetailsViewController.xib in Resources */,
+				7C604AA5258C4EEC009756E3 /* HZTGiftListCell.xib in Resources */,
 				7CA45AE32580690900EFD59A /* HZTHomeViewController.xib in Resources */,
+				7C604A9F258C45B5009756E3 /* HZTCommentListCell.xib in Resources */,
 				7CD6D9B42580BB15000519E3 /* HZTFindListView.xib in Resources */,
 				7CD6DA342583721F000519E3 /* nav_back@2x.png in Resources */,
 				7CFA87DE258A039C009D8E8E /* HZTMeProfileViewController.xib in Resources */,
@@ -750,8 +783,11 @@
 				7CD6D9932580A07D000519E3 /* NavBarView.m in Sources */,
 				7CA45AFB25806AC700EFD59A /* HZTRootNavigationController.m in Sources */,
 				7CD6D9D22581B5F9000519E3 /* HZTBasePagerViewController.m in Sources */,
+				7C604A91258C433F009756E3 /* HZTBaseTableListModel.m in Sources */,
+				7C604A9E258C45B5009756E3 /* HZTCommentListCell.m in Sources */,
 				7CFA8832258B0E2E009D8E8E /* HZTFindFileView.m in Sources */,
 				7CFA8826258AFFC6009D8E8E /* HZTPublishFileView.m in Sources */,
+				7C604AA4258C4EEC009756E3 /* HZTGiftListCell.m in Sources */,
 				7CD6DA11258201CA000519E3 /* HZTHomeMeListView.m in Sources */,
 				7CD6DA082581F4C2000519E3 /* HZTHomeMeListHeaderView.m in Sources */,
 				7CD6D96425807609000519E3 /* _JZNavigationDelegating.m in Sources */,
@@ -772,6 +808,7 @@
 				7CFA882A258B00C6009D8E8E /* HZTFilesModel.m in Sources */,
 				7CD6D96525807609000519E3 /* _JZ-objc-internal.m in Sources */,
 				7CCFCA9024BD98350049A887 /* JXPagerView.m in Sources */,
+				7C604A95258C434F009756E3 /* HZTBaseTableListLayout.m in Sources */,
 				7CFA882E258B0AAA009D8E8E /* UIImage+circleImage.m in Sources */,
 				7CD6D9B12580B9CA000519E3 /* HZTFindListView.m in Sources */,
 				7C604A83258B5C29009756E3 /* HZTFindDetailsSectionView.m in Sources */,
@@ -787,6 +824,7 @@
 				7CD6D97325807C82000519E3 /* HZTFindViewController.m in Sources */,
 				7CD6D97925809E65000519E3 /* HZTCustomTitleNavView.m in Sources */,
 				7CCFCA8F24BD98350049A887 /* JXPagerMainTableView.m in Sources */,
+				7C604A99258C43B3009756E3 /* HZTBaseTableListCell.m in Sources */,
 				7CD6D9B92580C455000519E3 /* HZTFindListCell.m in Sources */,
 				7CD6D9BE2580C7F5000519E3 /* HZTFindListModel.m in Sources */,
 				7CD6D9DF2581C59F000519E3 /* HZTPagerView.m in Sources */,
@@ -935,7 +973,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "haizitong-wangwx.DYDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -956,7 +994,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "haizitong-wangwx.DYDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -25,7 +25,6 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-
 }
 
 -(void)setLayout:(HZTFindListLayout *)layout{

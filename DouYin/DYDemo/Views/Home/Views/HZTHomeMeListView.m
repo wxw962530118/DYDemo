@@ -78,7 +78,7 @@
         [_containerView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.mas_top).offset(self.headerView.height);
             make.right.left.equalTo(self);
-            make.bottom.equalTo(self.mas_bottom).offset(-(49 + (IS_IPhoneX() ? 34 : 0)));
+            make.bottom.equalTo(self.mas_bottom).offset(-(49 + SafeAreaBottom()));
         }];
     }
     return _containerView;
