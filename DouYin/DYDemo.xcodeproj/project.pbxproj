@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C0D33C1258C966D006AACA4 /* HZTHomeMeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0D33C0258C966D006AACA4 /* HZTHomeMeListViewController.m */; };
 		7C604A7E258B5BCA009756E3 /* HZTFindDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C604A7C258B5BCA009756E3 /* HZTFindDetailsViewController.m */; };
 		7C604A7F258B5BCA009756E3 /* HZTFindDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C604A7D258B5BCA009756E3 /* HZTFindDetailsViewController.xib */; };
 		7C604A83258B5C29009756E3 /* HZTFindDetailsSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C604A82258B5C29009756E3 /* HZTFindDetailsSectionView.m */; };
@@ -75,7 +76,6 @@
 		7CD6D9E62581CA0A000519E3 /* HZTHomeLiveItemListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD6D9E52581CA0A000519E3 /* HZTHomeLiveItemListView.xib */; };
 		7CD6DA082581F4C2000519E3 /* HZTHomeMeListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6DA072581F4C2000519E3 /* HZTHomeMeListHeaderView.m */; };
 		7CD6DA0B2581F4CA000519E3 /* HZTHomeMeListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD6DA0A2581F4CA000519E3 /* HZTHomeMeListHeaderView.xib */; };
-		7CD6DA11258201CA000519E3 /* HZTHomeMeListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6DA10258201CA000519E3 /* HZTHomeMeListView.m */; };
 		7CD6DA2F25836933000519E3 /* HZTPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6DA2D25836932000519E3 /* HZTPublishViewController.m */; };
 		7CD6DA3025836933000519E3 /* HZTPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD6DA2E25836932000519E3 /* HZTPublishViewController.xib */; };
 		7CD6DA342583721F000519E3 /* nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD6DA332583721F000519E3 /* nav_back@2x.png */; };
@@ -94,6 +94,8 @@
 /* Begin PBXFileReference section */
 		07CF773E93828BDDDFA7CE0E /* libPods-DYDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DYDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		220A7EB74491E365DA57A1D8 /* Pods-DYDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYDemo.release.xcconfig"; path = "Target Support Files/Pods-DYDemo/Pods-DYDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7C0D33BF258C966D006AACA4 /* HZTHomeMeListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTHomeMeListViewController.h; sourceTree = "<group>"; };
+		7C0D33C0258C966D006AACA4 /* HZTHomeMeListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTHomeMeListViewController.m; sourceTree = "<group>"; };
 		7C604A7B258B5BCA009756E3 /* HZTFindDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTFindDetailsViewController.h; sourceTree = "<group>"; };
 		7C604A7C258B5BCA009756E3 /* HZTFindDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTFindDetailsViewController.m; sourceTree = "<group>"; };
 		7C604A7D258B5BCA009756E3 /* HZTFindDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HZTFindDetailsViewController.xib; sourceTree = "<group>"; };
@@ -211,8 +213,6 @@
 		7CD6DA062581F4C2000519E3 /* HZTHomeMeListHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTHomeMeListHeaderView.h; sourceTree = "<group>"; };
 		7CD6DA072581F4C2000519E3 /* HZTHomeMeListHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTHomeMeListHeaderView.m; sourceTree = "<group>"; };
 		7CD6DA0A2581F4CA000519E3 /* HZTHomeMeListHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HZTHomeMeListHeaderView.xib; sourceTree = "<group>"; };
-		7CD6DA0F258201CA000519E3 /* HZTHomeMeListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTHomeMeListView.h; sourceTree = "<group>"; };
-		7CD6DA10258201CA000519E3 /* HZTHomeMeListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTHomeMeListView.m; sourceTree = "<group>"; };
 		7CD6DA2C25836932000519E3 /* HZTPublishViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZTPublishViewController.h; sourceTree = "<group>"; };
 		7CD6DA2D25836932000519E3 /* HZTPublishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZTPublishViewController.m; sourceTree = "<group>"; };
 		7CD6DA2E25836932000519E3 /* HZTPublishViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HZTPublishViewController.xib; sourceTree = "<group>"; };
@@ -328,6 +328,8 @@
 				7CA45ADF2580690900EFD59A /* HZTHomeViewController.h */,
 				7CA45AE02580690900EFD59A /* HZTHomeViewController.m */,
 				7CA45AE12580690900EFD59A /* HZTHomeViewController.xib */,
+				7C0D33BF258C966D006AACA4 /* HZTHomeMeListViewController.h */,
+				7C0D33C0258C966D006AACA4 /* HZTHomeMeListViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -341,8 +343,6 @@
 				7CD6DA062581F4C2000519E3 /* HZTHomeMeListHeaderView.h */,
 				7CD6DA072581F4C2000519E3 /* HZTHomeMeListHeaderView.m */,
 				7CD6DA0A2581F4CA000519E3 /* HZTHomeMeListHeaderView.xib */,
-				7CD6DA0F258201CA000519E3 /* HZTHomeMeListView.h */,
-				7CD6DA10258201CA000519E3 /* HZTHomeMeListView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -788,7 +788,6 @@
 				7CFA8832258B0E2E009D8E8E /* HZTFindFileView.m in Sources */,
 				7CFA8826258AFFC6009D8E8E /* HZTPublishFileView.m in Sources */,
 				7C604AA4258C4EEC009756E3 /* HZTGiftListCell.m in Sources */,
-				7CD6DA11258201CA000519E3 /* HZTHomeMeListView.m in Sources */,
 				7CD6DA082581F4C2000519E3 /* HZTHomeMeListHeaderView.m in Sources */,
 				7CD6D96425807609000519E3 /* _JZNavigationDelegating.m in Sources */,
 				7CCFCA8E24BD98350049A887 /* JXPagerListContainerView.m in Sources */,
@@ -828,6 +827,7 @@
 				7CD6D9B92580C455000519E3 /* HZTFindListCell.m in Sources */,
 				7CD6D9BE2580C7F5000519E3 /* HZTFindListModel.m in Sources */,
 				7CD6D9DF2581C59F000519E3 /* HZTPagerView.m in Sources */,
+				7C0D33C1258C966D006AACA4 /* HZTHomeMeListViewController.m in Sources */,
 				7CD6D9C22580C81E000519E3 /* HZTFindListLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,8 +8,9 @@
 
 #import "HZTHomeViewController.h"
 #import "HZTPagerView.h"
-#import "HZTHomeMeListView.h"
 #import <MJRefreshNormalHeader.h>
+#import "HZTHomeMeListViewController.h"
+#import "JXPagerListRefreshView.h"
 @interface HZTHomeViewController ()
 
 @end
@@ -20,12 +21,8 @@
     [super viewDidLoad];
     self.categoryTitles = @[@"我的",@"流行"];
     self.pagerView = [[JXPagerListRefreshView alloc] initWithDelegate:self];
-    self.pagerViews = @[[self getMeListView],[self getView]];
+    self.pagerViews = @[[HZTHomeMeListViewController new],[self getView]];
     [super loadSubView];
-}
-
--(HZTHomeMeListView *)getMeListView{
-    return [[HZTHomeMeListView alloc] initWithDelegate:self];
 }
 
 -(UIView *)getView{
